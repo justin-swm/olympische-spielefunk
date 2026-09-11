@@ -27,7 +27,7 @@ function SportsTable() {
     { name: "Florian Wellbrock", age: 27, discipline: "10km Freistil" ,gold:0,silver:0,bronze:0},
     { name: "Josha Salchow", age: 25, discipline: "100m Freistil" ,gold:0,silver:0,bronze:0},
     { name: "Summer MCINTOSH", age: 17, discipline: "400m Lagen" ,gold:0,silver:0,bronze:0},
-    {name: "Klaus",age:20,discipline: "Treibgut",gold:0,silver:0,bronze:0}
+    {name: "Klaus Maus",age:20,discipline: "Treibgut",gold:0,silver:0,bronze:0}
   ]);
 
   
@@ -36,6 +36,7 @@ function SportsTable() {
     setAthletes(prevAthletes => updateMedal(prevAthletes, index, medal, change));
   };
 
+  // Wird bei jeder Darstellung erneut berechnet – auch nach einer State-Änderung.
   const sortedAthletes = sortAthletes(athletes);
 
   return (
